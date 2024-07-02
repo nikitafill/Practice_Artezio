@@ -1,0 +1,41 @@
+.slider-container {
+    display: flex;
+    align-items: center;
+}
+
+.slider {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+    margin: 0 10px;
+}
+
+.slider-wrapper {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slider-image {
+    width: 150px;
+    height: 150px;
+}
+
+.nav-button {
+    background-color: white;
+    border:none;
+    padding: 10px;
+    cursor: pointer;
+    user-select: none;
+    width: 50px;
+    height: 50px;
+    opacity: 0.6;
+}
+img{
+    width: 30px;
+    height: 30px;
+}
+.nav-button.disabled {
+    color: rgb(210, 210, 210);
+    opacity: 0.3;
+}

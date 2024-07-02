@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Заголовок страницы</title>
+    <link rel="stylesheet" type="text/css"  href="./styles.css">
+    <link rel="stylesheet" type="text/css" href="./slider-style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">ГЛАВНАЯ</a></li>
+                <li><a href="tasks.html">ЗАДАНИЯ</a></li>
+                <li class="navbar-settings"><a href="settings.html">НАСТРОЙКИ</a></li>
+            </ul>
+        </nav>
+        <hr>
+    </header>
+    <main>
+        <h1>Список заданий</h1>
+        <div class="exercise">
+            <h2> Задание 1. Ввод символов</h2>
+            <input type="text" id="textInput">
+            <p class="hint-text" id="hintText1">Количество символов: 0</p>
+        </div>
+        <div class="exercise">
+            <h2> Задание 2. Ввод текста</h2>
+            <textarea type="text" id="textAreaInput"></textarea>
+            <p class="hint-text" id="hintText2">Количество символов: 0</p>
+            <p class="word-count" id="wordCount">Количество слов: 0</p>
+            <p class="line-count" id="lineCount">Количество строк: 0</p>
+        </div>
+        <div class="exercise">
+            <h2> Задание 3. Проверка ввода</h2>
+            <input type="text" id="checkInput"></input>
+            <p class="hint-text" id="hintText3"></p>
+        </div>
+        <div class="exercise">
+            <h2> Задание 4. Ограничение ввода</h2>
+            <textarea type="text" id="checkTextAreaInput"></textarea>
+            <input type="checkbox" id="restrictInput">
+            <label for="restrictInput">Запретить превышение</label>
+            <p class="hint-text" id="hintText4"></p>
+        </div>
+        <div class="exercise">
+            <h2> Задание 5. Слайдер картинок</h2>
+            <div class="slider-container">
+                <button class="nav-button" id="prevButton"><img src = "images/left-arrow.png"></button>
+                <div class="slider">
+                    <div class="slider-wrapper">
+                        <img src="images/html_logo.png" alt="Image 1" class="slider-image">
+                        <img src="images/CSS3_logo.png" alt="Image 2" class="slider-image">
+                        <img src="images/JavaScript_logo.png" alt="Image 3" class="slider-image">
+                    </div>
+                </div>
+                <button class="nav-button" id="nextButton"><img src = "images/right-arrow.png"></button>
+            </div>
+        </div>
+        <div class="exercise">
+            <h2> Задание 6. Разность дат</h2>
+            <p id="currentDate" ></p>
+            <label for="daySelect">Дата события:</label>
+            <select id="daySelect"></select>
+            <select id="monthSelect"></select>
+            <select id="yearSelect"></select>
+            <p id="dateDifference" ></p>
+        </div>
+        <div class="exercise">
+            <h2> Задание 7. Прямоугольник</h2>
+            <div class="outer-rectangle">
+                <div id="innerRectangle" tabindex="0" class="inner-rectangle"></div>
+            </div>
+        </div>
+    </main>
+    <script src="textInputsProcessing.js"></script>
+    <script src="sliderScript.js"></script>
+    <script src="datesDifferenceScript.js"></script>
+    <script src="rectangle.js"></script>
+</body>
+</html>
